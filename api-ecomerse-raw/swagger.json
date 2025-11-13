@@ -210,7 +210,7 @@
     },
     "/admin/stats": {
       "get": { "tags": ["Admin"], "security": [{"bearerAuth":[]}], "responses": { "200": { "description": "Admin stats" } } }
-    }
+    },
     "/register": {
       "post": {
         "tags": ["Auth"],
