@@ -1,0 +1,119 @@
+{
+  "auth": [
+    {
+      "username": "admin",
+      "password": "$2b$10$eBfxYFyyFdc8idVUxX1wJeeLC6xwX41HCZrQjeWbPqWXPY8lqKuja" 
+    },
+    {
+      "username": "user01",
+      "password": "$2b$10$eBfxYFyyFdc8idVUxX1wJeeLC6xwX41HCZrQjeWbPqWXPY8lqKuja"
+    }
+  ],
+
+  "users": [
+    {
+      "_id": "user-001",
+      "username": "hungf",
+      "password": "$2b$10$eBfxYFyyFdc8idVUxX1wJeeLC6xwX41HCZrQjeWbPqWXPY8lqKuja",
+      "createdAt": "2025-10-12T10:00:00.000Z",
+      "updatedAt": "2025-10-12T10:00:00.000Z",
+      "deletedAt": null
+    }
+  ],
+
+  "products": [
+    {
+      "_id": "prod-001",
+      "name": "Áo thun basic trắng",
+      "price": 199000,
+      "description": "Áo thun cotton thoáng mát, phù hợp mặc hằng ngày.",
+      "type": "áo thun",
+      "size": [
+        { "label": "S", "stock": 20 },
+        { "label": "M", "stock": 25 },
+        { "label": "L", "stock": 15 }
+      ],
+      "material": "Cotton 100%",
+      "images": [
+        "https://example.com/img/ao-thun-trang-1.jpg",
+        "https://example.com/img/ao-thun-trang-2.jpg"
+      ],
+      "createdAt": "2025-10-12T10:00:00.000Z",
+      "updatedAt": "2025-10-12T10:00:00.000Z",
+      "deletedAt": null
+    },
+    {
+      "_id": "prod-002",
+      "name": "Quần jean xanh",
+      "price": 499000,
+      "description": "Quần jean co giãn thoải mái, phù hợp nhiều dáng người.",
+      "type": "quần",
+      "size": [
+        { "label": "M", "stock": 30 },
+        { "label": "L", "stock": 25 },
+        { "label": "XL", "stock": 10 }
+      ],
+      "material": "Denim",
+      "images": [
+        "https://example.com/img/quan-jean-xanh-1.jpg"
+      ],
+      "createdAt": "2025-10-12T10:00:00.000Z",
+      "updatedAt": "2025-10-12T10:00:00.000Z",
+      "deletedAt": null
+    }
+  ],
+
+  "carts": [
+    {
+      "_id": "cart-001",
+      "userId": "user-001",
+      "productId": "prod-001",
+      "quantity": 2,
+      "size": "M",
+      "createdAt": "2025-10-12T10:10:00.000Z",
+      "updatedAt": "2025-10-12T10:10:00.000Z",
+      "deletedAt": null
+    }
+  ],
+
+  "orders": [
+    {
+      "_id": "order-001",
+      "userId": "user-001",
+      "firstName": "Hung",
+      "lastName": "Pham",
+      "companyName": "None",
+      "country": "Vietnam",
+      "street": "123 Nguyễn Trãi",
+      "apartment": "A2-04",
+      "cities": "Hà Nội",
+      "state": "HN",
+      "phone": "0901234567",
+      "zipCode": "100000",
+      "email": "hung@example.com",
+      "status": "processing",
+      "items": [
+        {
+          "productId": "prod-001",
+          "quantity": 2,
+          "size": "M",
+          "price": 199000
+        }
+      ],
+      "totalAmount": 398000,
+      "paymentInfo": {
+        "sepayTransactionId": 123456,
+        "gateway": "sepay",
+        "transactionDate": "2025-10-12T11:00:00.000Z",
+        "accountNumber": "0123456789",
+        "transferAmount": 398000,
+        "referenceCode": "ORDER123456",
+        "content": "Thanh toan don hang 001",
+        "paidAt": "2025-10-12T11:01:00.000Z"
+      },
+      "createdAt": "2025-10-12T10:15:00.000Z",
+      "updatedAt": "2025-10-12T10:15:00.000Z",
+      "deletedAt": null
+    }
+  ]
+}
