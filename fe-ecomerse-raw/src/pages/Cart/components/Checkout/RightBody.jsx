@@ -23,6 +23,7 @@ function RightBody() {
   const [qrOpen, setQrOpen] = useState(false);
   const [qrUrl, setQrUrl] = useState('');
   // Lưu ý: acc phải đúng mã tài khoản nhận QR được SePay cấp
+  const [bankInfo] = useState({ bank: 'BIDV', acc: '2153659567', owner: 'VAN DANG HIEU' });
 
   const handleCloseQr = async () => {
     try {
