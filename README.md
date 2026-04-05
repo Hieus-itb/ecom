@@ -283,22 +283,4 @@ cd api-ecomerse-raw
 - Responsive design
 - Error handling
 
-## 📞 Support
-
-### Issues
-- GitHub Issues
-- Documentation
-- Code examples
-- Best practices
-
-### Contact
-- Email: support@example.com
-- Documentation: `/docs` folder
-- API Docs: Swagger UI
-
-## 📄 License
-MIT License - Xem file LICENSE để biết thêm chi tiết.
-
----
-
 **Happy Coding! 🚀**

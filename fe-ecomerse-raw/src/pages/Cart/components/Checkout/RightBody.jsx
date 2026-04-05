@@ -9,7 +9,7 @@ import { deleteCart } from '@/apis/cartService';
 import Cookies from 'js-cookie';
 import { ToastContext } from '@/contexts/ToastProvider';
 import { StoreContext } from '@/contexts/storeProvider';
-
+import qrImg from '../../../../assets/images/QR.jpg';
 function RightBody() {
   const { rightBody, title, items, item, total, subTotal, payment, btn } =
     styles;
@@ -23,7 +23,6 @@ function RightBody() {
   const [qrOpen, setQrOpen] = useState(false);
   const [qrUrl, setQrUrl] = useState('');
   // Lưu ý: acc phải đúng mã tài khoản nhận QR được SePay cấp
-  const [bankInfo] = useState({ bank: 'MBBank', acc: 'VQRQACJYV7290', owner: 'LE VIET DUNG' });
 
   const handleCloseQr = async () => {
     try {
@@ -153,7 +152,7 @@ function RightBody() {
           <div style={{background:'#111',color:'#fff',padding:20,borderRadius:8,maxWidth:980,width:'90%',display:'grid',gridTemplateColumns:'1fr 1fr',gap:16}}>
             <div style={{textAlign:'center'}}>
               <p style={{margin:'8px 0'}}>Quét mã QR để thanh toán</p>
-              <img src={qrUrl} alt="QR" style={{width:'100%',maxWidth:360,background:'#fff',padding:8,borderRadius:8}} />
+              <img src={qrImg} alt="QR" style={{width:'100%',maxWidth:360,background:'#fff',padding:8,borderRadius:8}} />
             </div>
             <div style={{background:'#1a1a1a',padding:16,borderRadius:8}}>
               <h4 style={{marginTop:0}}>{bankInfo.bank}</h4>
